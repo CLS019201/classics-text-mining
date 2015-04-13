@@ -37,7 +37,7 @@ with open ("../results/example_out_500.xml","a", encoding='utf-8') as wf:
                         attr = attr[1]
                     else:
                         attr = ""
-                    box_s = '<infobox ' + 'class="\\'+attr +'">\n'
+                    box_s = '<infobox ' + 'class="' + attr +'">\n'
                     opens = 0
                     closes = 0
                     in_itembox = True
@@ -58,7 +58,8 @@ with open ("../results/example_out_500.xml","a", encoding='utf-8') as wf:
                 box_s += line
                 
                 #look for latd and longd in line
-                if('latd' in line):
+                locs_keys = ['latd', 'longd', 'longitude', 'latitude']
+                if any(key in line for key in locs_key:
                     #print('found lat')
                     #print(line)
                     #input()
@@ -72,7 +73,7 @@ with open ("../results/example_out_500.xml","a", encoding='utf-8') as wf:
                         #input()
                         #infoboxes.append(box_s + '</infobox>\n')
                         num_docs += 1
-                        wf.write(box_s)
+                        wf.write(box_s + "</infobox>\n")
                         if(num_docs % 2000 == 0):
                             print(num_docs)
                             #print("BOXcount: " + str(num_docs))
