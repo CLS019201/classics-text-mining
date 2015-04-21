@@ -7,13 +7,10 @@ _USEFUL_FLAGS = [  'latd', 'longd', 'longitude', 'latitude', 'coord',
                     'CoorHeader', 'coor d', 'Geolinks', 'Mapit', '| loc', 
                     'coor_pinpoint', 'coordinates_']
 
-_WIKIDB = "../examples_latd+infobox.xml"
-_OUTFILE = "../testout.xml"
-_LOGFILE = "../testlog.txt"
+_WIKIDB = "../xml_data/allwiki.xml"
+_OUTFILE = "../results/all_infoboxes.xml"
+_LOGFILE = "../results/all_infoboxes_log.txt"
 _MAX_BOX_SIZE = 500
-
-# Lets mock up a main...
-
 
 def main():
     parser = Parser(_WIKIDB, _OUTFILE, _USEFUL_FLAGS, _MAX_BOX_SIZE)
@@ -23,7 +20,6 @@ def main():
     parser.writeLogs(_LOGFILE)
 
 ### PARSER CLASS
-
 class Parser:
 
     # States
@@ -114,7 +110,6 @@ class Parser:
                 self.hasFlags = self.hasFlags or any(key in line for key in self.flags)
                 if self.unmatchedBraces == 0:
                     self.totalBoxes += 1
-                    print("matched braces")
                     if self.hasFlags:
                         self.collectedBoxes += 1
                         outfile.write(boxString + "</infobox>\n")
@@ -152,6 +147,8 @@ class Parser:
             log += "\nSKIPPED CHUNKS:                   " + str(self.skippedChunks)
             print(log)
             log_f.write(log)
+
+#### END OF CLASS
 
 if __name__ == "__main__":
     main()

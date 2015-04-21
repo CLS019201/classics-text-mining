@@ -1,0 +1,6 @@
+RESULTS and DIAGNOSTICS
+Total number of docs:             15346327
+Total number of Infoboxes:        2636526
+Number of Infoboxes Collected:    809687
+Max infobox chunk/line size:      500
+SKIPPED CHUNKS:                   37
