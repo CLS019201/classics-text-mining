@@ -10,7 +10,7 @@ def get_class(line):
 def main():
     #list 
     freq = {}
-    with open ("sanitize_1.xml","r") as f:
+    with open ("../xml_data/sanitize_1.xml","r", encoding="utf-8") as f:
         for line in f:
             if "<infobox" in line:
                 line = get_class(line)
@@ -26,7 +26,8 @@ def main():
 
     ordered_list = sorted(pairs, key = lambda tup:tup[1], reverse=True)
 
-    with open ("list_attr.json", "w") as f:
+    with open ("../json/list_attr.json", "w") as f:
         json.dump(ordered_list, f, indent=2)
 
-
+if __name__ == "__main__":
+    main()

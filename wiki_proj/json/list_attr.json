@@ -1,1086 +1,1110 @@
 [
   [
-    "settlement", 
+    "settlement\n",
     323781
-  ], 
+  ],
   [
-    "NRHP", 
+    "NRHP\n",
     39959
-  ], 
+  ],
   [
-    "French", 
+    "French\n",
     36789
-  ], 
+  ],
   [
-    "company", 
+    "company\n",
     32414
-  ], 
+  ],
   [
-    "UK", 
+    "UK\n",
     21227
-  ], 
+  ],
   [
-    "station", 
+    "mountain\n",
+    17598
+  ],
+  [
+    "station\n",
     13829
-  ], 
+  ],
   [
-    "person", 
+    "person\n",
     12505
-  ], 
+  ],
   [
-    "military", 
+    "military\n",
     11695
-  ], 
+  ],
   [
-    "school", 
+    "school\n",
     11116
-  ], 
+  ],
   [
-    "airport", 
+    "airport\n",
     10957
-  ], 
+  ],
   [
-    "building", 
+    "building\n",
     9569
-  ], 
+  ],
   [
-    "television", 
+    "lake\n",
+    9486
+  ],
+  [
+    "television\n",
     9179
-  ], 
+  ],
   [
-    "Settlement", 
+    "Settlement\n",
     9155
-  ], 
+  ],
   [
-    "Australian", 
+    "Australian\n",
     8997
-  ], 
+  ],
   [
-    "Italian", 
+    "Italian\n",
     8147
-  ], 
+  ],
   [
-    "church", 
+    "church\n",
     6093
-  ], 
+  ],
   [
-    "radio", 
+    "radio\n",
     6066
-  ], 
+  ],
   [
-    "Radio", 
+    "Radio\n",
     5643
-  ], 
+  ],
   [
-    "stadium", 
+    "stadium\n",
     5206
-  ], 
+  ],
   [
-    "rockunit", 
+    "rockunit\n",
     5189
-  ], 
+  ],
   [
-    "organization", 
+    "organization\n",
     5140
-  ], 
+  ],
   [
-    "nrhp", 
+    "nrhp\n",
     4965
-  ], 
+  ],
   [
-    "Russian", 
+    "Russian\n",
     4454
-  ], 
+  ],
   [
-    "School", 
+    "School\n",
     4211
-  ], 
+  ],
   [
-    "protected", 
+    "protected\n",
     4034
-  ], 
+  ],
   [
-    "|", 
+    "river\n",
+    3924
+  ],
+  [
+    "islands\n",
+    3563
+  ],
+  [
+    "|\n",
     3471
-  ], 
+  ],
   [
-    "dam", 
+    "dam\n",
     3011
-  ], 
+  ],
   [
-    "Airport", 
+    "Airport\n",
     2987
-  ], 
+  ],
   [
-    "rail", 
+    "rail\n",
     2961
-  ], 
+  ],
   [
-    "religious", 
+    "religious\n",
     2904
-  ], 
+  ],
   [
-    "Historic", 
+    "Historic\n",
     2883
-  ], 
+  ],
   [
-    "park", 
+    "park\n",
     2560
-  ], 
+  ],
   [
-    "officeholder", 
+    "officeholder\n",
     2540
-  ], 
+  ],
   [
-    "district", 
+    "district\n",
     2504
-  ], 
+  ],
   [
-    "Protected", 
+    "Protected\n",
     2274
-  ], 
+  ],
   [
-    "scientist", 
+    "scientist\n",
     2233
-  ], 
+  ],
   [
-    "Military", 
+    "Military\n",
     2194
-  ], 
+  ],
   [
-    "South", 
+    "South\n",
     2193
-  ], 
+  ],
   [
-    "Television", 
+    "Television\n",
     2110
-  ], 
+  ],
   [
-    "broadcast", 
+    "broadcast\n",
     1947
-  ], 
+  ],
   [
-    "", 
+    "\n",
     1921
-  ], 
+  ],
   [
-    "award", 
+    "award\n",
     1896
-  ], 
+  ],
   [
-    "Stadium", 
+    "Stadium\n",
     1886
-  ], 
+  ],
   [
-    "bridge", 
+    "bridge\n",
     1865
-  ], 
+  ],
   [
-    "power", 
+    "power\n",
     1858
-  ], 
+  ],
   [
-    "See", 
+    "See\n",
     1830
-  ], 
+  ],
   [
-    "museum", 
+    "museum\n",
     1735
-  ], 
+  ],
   [
-    "record", 
+    "record\n",
     1673
-  ], 
+  ],
   [
-    "diocese", 
+    "diocese\n",
     1662
-  ], 
+  ],
   [
-    "Infobox", 
+    "Infobox\n",
     1657
-  ], 
+  ],
   [
-    "lighthouse", 
+    "lighthouse\n",
     1639
-  ], 
+  ],
   [
-    "Museum", 
+    "Museum\n",
     1639
-  ], 
+  ],
   [
-    "non-profit", 
+    "non-profit\n",
     1605
-  ], 
+  ],
   [
-    "Station", 
+    "Station\n",
     1576
-  ], 
+  ],
   [
-    "artwork", 
+    "artwork\n",
     1456
-  ], 
+  ],
   [
-    "mine", 
+    "mine\n",
     1414
-  ], 
+  ],
   [
-    "hospital", 
+    "hospital\n",
     1395
-  ], 
+  ],
   [
-    "shopping", 
+    "shopping\n",
     1387
-  ], 
+  ],
   [
-    "ancient", 
+    "ancient\n",
     1354
-  ], 
+  ],
   [
-    "Bridge", 
+    "Bridge\n",
     1352
-  ], 
+  ],
   [
-    "university", 
+    "university\n",
     1328
-  ], 
+  ],
   [
-    "historic", 
+    "historic\n",
     1327
-  ], 
+  ],
   [
-    "government", 
+    "government\n",
     1240
-  ], 
+  ],
   [
-    "rugby", 
+    "rugby\n",
     1209
-  ], 
+  ],
   [
-    "hotel", 
+    "hotel\n",
     1199
-  ], 
+  ],
   [
-    "locomotive", 
+    "locomotive\n",
     1188
-  ], 
+  ],
   [
-    "City", 
+    "City\n",
     1169
-  ], 
+  ],
   [
-    "GB", 
+    "GB\n",
     1154
-  ], 
+  ],
   [
-    "civilian", 
+    "civilian\n",
     1149
-  ], 
+  ],
   [
-    "University", 
+    "University\n",
     1115
-  ], 
+  ],
   [
-    "college", 
+    "college\n",
     1070
-  ], 
+  ],
   [
-    "Officeholder", 
+    "Officeholder\n",
     1049
-  ], 
+  ],
   [
-    "Deutsche", 
+    "Deutsche\n",
     1037
-  ], 
+  ],
   [
-    "settlement|", 
+    "settlement|\n",
     976
-  ], 
+  ],
   [
-    "dot-com", 
+    "dot-com\n",
     973
-  ], 
+  ],
   [
-    "Government", 
+    "Government\n",
     921
-  ], 
+  ],
   [
-    "waterfall", 
+    "waterfall\n",
     881
-  ], 
+  ],
   [
-    "Parish", 
+    "Parish\n",
     875
-  ], 
+  ],
   [
-    "country", 
+    "country\n",
     873
-  ], 
+  ],
   [
-    "WorldScouting", 
+    "WorldScouting\n",
     869
-  ], 
+  ],
   [
-    "GAA", 
+    "GAA\n",
     845
-  ], 
+  ],
   [
-    "Chinese-language", 
+    "Chinese-language\n",
     842
-  ], 
+  ],
   [
-    "zoo", 
+    "zoo\n",
     835
-  ], 
+  ],
   [
-    "former", 
+    "former\n",
     821
-  ], 
+  ],
   [
-    "theatre", 
+    "theatre\n",
     817
-  ], 
+  ],
   [
-    "concert", 
+    "concert\n",
     814
-  ], 
+  ],
   [
-    "Bus", 
+    "Bus\n",
     800
-  ], 
+  ],
   [
-    "body", 
+    "body\n",
     797
-  ], 
+  ],
   [
-    "recurring", 
+    "recurring\n",
     778
-  ], 
+  ],
   [
-    "artist", 
+    "artist\n",
     761
-  ], 
+  ],
   [
-    "Mandir", 
+    "Mandir\n",
     735
-  ], 
+  ],
   [
-    "River", 
+    "River\n",
     734
-  ], 
+  ],
   [
-    "horseraces", 
+    "horseraces\n",
     731
-  ], 
+  ],
   [
-    "Figure", 
+    "Figure\n",
     726
-  ], 
+  ],
   [
-    "individual", 
+    "individual\n",
     716
-  ], 
+  ],
   [
-    "Basketball", 
+    "Basketball\n",
     713
-  ], 
+  ],
   [
-    "music", 
+    "music\n",
     712
-  ], 
+  ],
   [
-    "roller", 
+    "roller\n",
     705
-  ], 
+  ],
   [
-    "library", 
+    "library\n",
     700
-  ], 
+  ],
   [
-    "cycling", 
+    "cycling\n",
     688
-  ], 
+  ],
   [
-    "venue", 
+    "venue\n",
     684
-  ], 
+  ],
   [
-    "Israel", 
+    "Israel\n",
     684
-  ], 
+  ],
   [
-    "NYCS", 
+    "NYCS\n",
     672
-  ], 
+  ],
   [
-    "tennis", 
+    "tennis\n",
     669
-  ], 
+  ],
   [
-    "golf", 
+    "glacier\n",
+    667
+  ],
+  [
+    "Islands\n",
+    652
+  ],
+  [
+    "golf\n",
     648
-  ], 
+  ],
   [
-    "street", 
+    "street\n",
     631
-  ], 
+  ],
   [
-    "London", 
+    "London\n",
     629
-  ], 
+  ],
   [
-    "Theatre", 
+    "Theatre\n",
     622
-  ], 
+  ],
   [
-    "Company", 
+    "Company\n",
     606
-  ], 
+  ],
   [
-    "Film", 
+    "Film\n",
     592
-  ], 
+  ],
   [
-    "ship", 
+    "ship\n",
     584
-  ], 
+  ],
   [
-    "prison", 
+    "prison\n",
     579
-  ], 
+  ],
   [
-    "oil", 
+    "oil\n",
     575
-  ], 
+  ],
   [
-    "cemetery", 
+    "cemetery\n",
     567
-  ], 
+  ],
   [
-    "Person", 
+    "Person\n",
     559
-  ], 
+  ],
   [
-    "Organization", 
+    "Organization\n",
     548
-  ], 
+  ],
   [
-    "amusement", 
+    "amusement\n",
     530
-  ], 
+  ],
   [
-    "SSSI", 
+    "SSSI\n",
     518
-  ], 
+  ],
   [
-    "monastery", 
+    "monastery\n",
     493
-  ], 
+  ],
   [
-    "Law", 
+    "Law\n",
     483
-  ], 
+  ],
   [
-    "Former", 
+    "Former\n",
     462
-  ], 
+  ],
   [
-    "MP", 
+    "MP\n",
     447
-  ], 
+  ],
   [
-    "Convention", 
+    "Convention\n",
     442
-  ], 
+  ],
   [
-    "Kibbutz", 
+    "Kibbutz\n",
     432
-  ], 
+  ],
   [
-    "tunnel", 
+    "tunnel\n",
     424
-  ], 
+  ],
   [
-    "kommune", 
+    "kommune\n",
     423
-  ], 
+  ],
   [
-    "Palestinian", 
+    "Palestinian\n",
     421
-  ], 
+  ],
   [
-    "company|", 
+    "company|\n",
     419
-  ], 
+  ],
   [
-    "Broadcast", 
+    "Broadcast\n",
     408
-  ], 
+  ],
   [
-    "spaceflight", 
+    "spaceflight\n",
     404
-  ], 
+  ],
   [
-    "aircraft", 
+    "aircraft\n",
     396
-  ], 
+  ],
   [
-    "Finnish", 
+    "Finnish\n",
     388
-  ], 
+  ],
   [
-    "film", 
+    "film\n",
     387
-  ], 
+  ],
   [
-    "temple", 
+    "temple\n",
     373
-  ], 
+  ],
   [
-    "Aircraft", 
+    "Aircraft\n",
     363
-  ], 
+  ],
   [
-    "road", 
+    "road\n",
     361
-  ], 
+  ],
   [
-    "Scottish", 
+    "cave\n",
     360
-  ], 
+  ],
   [
-    "cave", 
+    "Scottish\n",
     360
-  ], 
+  ],
   [
-    "football", 
+    "hiking\n",
     355
-  ], 
+  ],
   [
-    "hiking", 
+    "Venue\n",
     355
-  ], 
+  ],
   [
-    "Venue", 
+    "football\n",
     355
-  ], 
+  ],
   [
-    "civil", 
+    "civil\n",
     346
-  ], 
+  ],
   [
-    "tram", 
+    "tram\n",
     339
-  ], 
+  ],
   [
-    "Hospital", 
+    "Hospital\n",
     338
-  ], 
+  ],
   [
-    "volleyball", 
+    "volleyball\n",
     333
-  ], 
+  ],
   [
-    "Athleticrace", 
+    "Athleticrace\n",
     332
-  ], 
+  ],
   [
-    "ski", 
+    "ski\n",
     329
-  ], 
+  ],
   [
-    "earthquake", 
+    "SMS\n",
     328
-  ], 
+  ],
   [
-    "SMS", 
+    "earthquake\n",
     328
-  ], 
+  ],
   [
-    "law", 
+    "law\n",
     327
-  ], 
+  ],
   [
-    "Paris", 
+    "Paris\n",
     317
-  ], 
+  ],
   [
-    "school|", 
+    "monument\n",
     316
-  ], 
+  ],
   [
-    "monument", 
+    "school|\n",
     316
-  ], 
+  ],
   [
-    "Italy", 
+    "Italy\n",
     308
-  ], 
+  ],
   [
-    "Ireland", 
+    "Ireland\n",
     303
-  ], 
+  ],
   [
-    "restaurant", 
+    "restaurant\n",
     294
-  ], 
+  ],
   [
-    "Observatory", 
+    "Observatory\n",
     292
-  ], 
+  ],
   [
-    "LGBT", 
+    "LGBT\n",
     291
-  ], 
+  ],
   [
-    "NFL", 
+    "NFL\n",
     290
-  ], 
+  ],
   [
-    "Secondary", 
+    "Secondary\n",
     288
-  ], 
+  ],
   [
-    "Port", 
+    "Port\n",
     285
-  ], 
+  ],
   [
-    "SG", 
+    "SG\n",
     282
-  ], 
+  ],
   [
-    "Hungarian", 
+    "Hungarian\n",
     280
-  ], 
+  ],
   [
-    "Locomotive", 
+    "Locomotive\n",
     279
-  ], 
+  ],
   [
-    "Pre-Columbian", 
+    "Pre-Columbian\n",
     278
-  ], 
+  ],
   [
-    "Ukrainian", 
+    "Ukrainian\n",
     278
-  ], 
+  ],
   [
-    "Prison", 
+    "Prison\n",
     277
-  ], 
+  ],
   [
-    "Municipality", 
+    "Municipality\n",
     276
-  ], 
+  ],
   [
-    "Ship", 
+    "Ship\n",
     275
-  ], 
+  ],
   [
-    "education", 
+    "education\n",
     275
-  ], 
+  ],
   [
-    "basketball", 
+    "basketball\n",
     261
-  ], 
+  ],
   [
-    "convention", 
+    "high\n",
     259
-  ], 
+  ],
   [
-    "high", 
+    "convention\n",
     259
-  ], 
+  ],
   [
-    "castrum", 
+    "castrum\n",
     254
-  ], 
+  ],
   [
-    "Egyptian", 
+    "Egyptian\n",
     253
-  ], 
+  ],
   [
-    "Tibetan", 
+    "Tibetan\n",
     251
-  ], 
+  ],
   [
-    "monarch", 
+    "monarch\n",
     243
-  ], 
+  ],
   [
-    "Public", 
+    "Public\n",
     242
-  ], 
+  ],
   [
-    "treaty", 
+    "treaty\n",
     240
-  ], 
+  ],
   [
-    "Maldives", 
+    "Maldives\n",
     236
-  ], 
+  ],
   [
-    "Treaty", 
+    "Treaty\n",
     230
-  ], 
+  ],
   [
-    "animal", 
+    "animal\n",
     227
-  ], 
+  ],
   [
-    "china", 
+    "china\n",
     226
-  ], 
+  ],
   [
-    "cricket", 
+    "cricket\n",
     225
-  ], 
+  ],
   [
-    "regency", 
+    "state\n",
     224
-  ], 
+  ],
   [
-    "state", 
+    "regency\n",
     224
-  ], 
+  ],
   [
-    "news", 
+    "news\n",
     223
-  ], 
+  ],
   [
-    "Politician", 
+    "Politician\n",
     222
-  ], 
+  ],
   [
-    "Education", 
+    "Education\n",
     220
-  ], 
+  ],
   [
-    "Latter", 
+    "Latter\n",
     216
-  ], 
+  ],
   [
-    "bus", 
+    "bus\n",
     211
-  ], 
+  ],
   [
-    "China", 
+    "China\n",
     210
-  ], 
+  ],
   [
-    "frazione", 
+    "frazione\n",
     209
-  ], 
+  ],
   [
-    "Windmill", 
+    "Windmill\n",
     208
-  ], 
+  ],
   [
-    "Diplomatic", 
+    "Diplomatic\n",
     206
-  ], 
+  ],
   [
-    "American", 
+    "American\n",
     200
-  ], 
+  ],
   [
-    "event", 
+    "event\n",
     194
-  ], 
+  ],
   [
-    "Cape", 
+    "Cape\n",
     187
-  ], 
+  ],
   [
-    "Mine", 
+    "Congressman\n",
     186
-  ], 
+  ],
   [
-    "Congressman", 
+    "Mine\n",
     186
-  ], 
+  ],
   [
-    "port", 
+    "port\n",
     184
-  ], 
+  ],
   [
-    "pipeline", 
+    "pipeline\n",
     184
-  ], 
+  ],
   [
-    "winery", 
+    "winery\n",
     181
-  ], 
+  ],
   [
-    "World", 
+    "World\n",
     177
-  ], 
+  ],
   [
-    "orchestra", 
+    "orchestra\n",
     174
-  ], 
+  ],
   [
-    "judge", 
+    "judge\n",
     172
-  ], 
+  ],
   [
-    "observatory", 
+    "observatory\n",
     170
-  ], 
+  ],
   [
-    "Mayor", 
+    "Mayor\n",
     162
-  ], 
+  ],
   [
-    "website", 
+    "dava\n",
     159
-  ], 
+  ],
   [
-    "dava", 
+    "website\n",
     159
-  ], 
+  ],
   [
-    "fictional", 
+    "fictional\n",
     157
-  ], 
+  ],
   [
-    "Rockunit", 
+    "Rockunit\n",
     156
-  ], 
+  ],
   [
-    "Japan", 
+    "Japan\n",
     156
-  ], 
+  ],
   [
-    "governor", 
+    "governor\n",
     155
-  ], 
+  ],
   [
-    "squash", 
+    "squash\n",
     152
-  ], 
+  ],
   [
-    "diplomatic", 
+    "diplomatic\n",
     151
-  ], 
+  ],
   [
-    "artefact", 
+    "artefact\n",
     148
-  ], 
+  ],
   [
-    "constituency", 
+    "Pre-modern\n",
     146
-  ], 
+  ],
   [
-    "Pre-modern", 
+    "constituency\n",
     146
-  ], 
+  ],
   [
-    "japan", 
+    "japan\n",
     142
-  ], 
+  ],
   [
-    "secondary", 
+    "secondary\n",
     142
-  ], 
+  ],
   [
-    "Winery", 
+    "Winery\n",
     139
-  ], 
+  ],
   [
-    "terrorist", 
+    "terrorist\n",
     138
-  ], 
+  ],
   [
-    "Monument", 
+    "Monument\n",
     136
-  ], 
+  ],
   [
-    "meteorite", 
+    "trolleybus\n",
     132
-  ], 
+  ],
   [
-    "trolleybus", 
+    "meteorite\n",
     132
-  ], 
+  ],
   [
-    "musical", 
+    "musical\n",
     131
-  ], 
+  ],
   [
-    "casino", 
+    "casino\n",
     131
-  ], 
+  ],
   [
-    "Airliner", 
+    "Airliner\n",
     129
-  ], 
+  ],
   [
-    "Partido", 
+    "Partido\n",
     128
-  ], 
+  ],
   [
-    "oilfield", 
+    "oilfield\n",
     128
-  ], 
+  ],
   [
-    "Brewery", 
+    "Brewery\n",
     127
-  ], 
+  ],
   [
-    "single", 
+    "single\n",
     124
-  ], 
+  ],
   [
-    "State", 
+    "State\n",
     122
-  ], 
+  ],
   [
-    "mosque", 
+    "mosque\n",
     120
-  ], 
+  ],
   [
-    "MTR", 
+    "MTR\n",
     120
-  ], 
+  ],
   [
-    "Indian", 
+    "residential\n",
     118
-  ], 
+  ],
   [
-    "residential", 
+    "Indian\n",
     118
-  ], 
+  ],
   [
-    "valley", 
+    "valley\n",
     117
-  ], 
+  ],
   [
-    "sport", 
+    "sport\n",
     114
-  ], 
+  ],
   [
-    "Manchester", 
+    "Manchester\n",
     112
-  ], 
+  ],
   [
-    "rowing", 
+    "rowing\n",
     111
-  ], 
+  ],
   [
-    "department", 
+    "department\n",
     109
-  ], 
+  ],
   [
-    "television|", 
+    "television|\n",
     108
-  ], 
+  ],
   [
-    "automobile", 
+    "automobile\n",
     108
-  ], 
+  ],
   [
-    "canal", 
+    "canal\n",
     103
-  ], 
+  ],
   [
-    "Buddhist", 
+    "athletics\n",
     102
-  ], 
+  ],
   [
-    "athletics", 
+    "economist\n",
     102
-  ], 
+  ],
   [
-    "economist", 
+    "Buddhist\n",
     102
-  ], 
+  ],
   [
-    "team", 
+    "team\n",
     101
-  ], 
+  ],
   [
-    "artifact", 
+    "artifact\n",
     100
-  ], 
+  ],
   [
-    "NBA", 
+    "NBA\n",
     99
-  ], 
+  ],
   [
-    "{{Infobox", 
+    "{{Infobox\n",
     98
-  ], 
+  ],
   [
-    "feature", 
+    "AM\n",
     96
-  ], 
+  ],
   [
-    "gold", 
+    "gold\n",
     96
-  ], 
+  ],
   [
-    "AM", 
+    "feature\n",
     96
-  ], 
+  ],
   [
-    "brewery", 
+    "brewery\n",
     95
-  ], 
+  ],
   [
-    "organisation", 
+    "organisation\n",
     94
-  ], 
+  ],
   [
-    "hot", 
+    "hot\n",
     93
-  ], 
+  ],
   [
-    "PAhistoric", 
+    "Golf\n",
     92
-  ], 
+  ],
   [
-    "Golf", 
+    "PAhistoric\n",
     92
-  ], 
+  ],
   [
-    "Neighborhood", 
+    "Neighborhood\n",
     91
-  ], 
+  ],
   [
-    "Cave", 
+    "Cave\n",
     89
-  ], 
+  ],
   [
-    "public", 
+    "PKP\n",
     88
-  ], 
+  ],
   [
-    "PKP", 
+    "public\n",
     88
-  ], 
+  ],
   [
-    "aviator", 
+    "aviator\n",
     86
-  ], 
+  ],
   [
-    "Native", 
+    "Native\n",
     84
-  ], 
+  ],
   [
-    "papal", 
+    "papal\n",
     84
-  ], 
+  ],
   [
-    "racecourse", 
+    "racecourse\n",
     83
-  ], 
+  ],
   [
-    "World's", 
+    "World's\n",
     82
-  ], 
+  ],
   [
-    "stage", 
+    "stage\n",
     81
   ]
 ]
