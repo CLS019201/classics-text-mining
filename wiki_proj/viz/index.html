@@ -70,10 +70,10 @@ d3.json("world.json", function(error, world) {
 });
 
 //Plot points
-d3.json("s1.json", function(error, settlements) {
+d3.json("a1.json", function(error, settlements) {
   console.log("here")
   svg.append("path")
-      .datum(topojson.feature(settlements, settlements.objects.settlements_geo))
+      .datum(topojson.feature(settlements, settlements.objects.america))
       .attr("class", "settlements")
       .attr("d", path)
 });
