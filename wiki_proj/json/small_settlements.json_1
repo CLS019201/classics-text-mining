@@ -1,0 +1,28 @@
+[
+  {
+    "_TYPE": "_SETTLEMENT",
+    "established_date": "",
+    "extinct_date": "",
+    "latNS": "N",
+    "latd": "39",
+    "latm": "56",
+    "lats": "",
+    "longEW": "E",
+    "longd": "32",
+    "longm": "52",
+    "longs": ""
+  },
+  {
+    "_TYPE": "_SETTLEMENT",
+    "established_date": "",
+    "extinct_date": "",
+    "latNS": "N",
+    "latd": "52",
+    "latm": "22",
+    "lats": "",
+    "longEW": "E",
+    "longd": "4",
+    "longm": "54",
+    "longs": ""
+  }
+]
