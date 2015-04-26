@@ -22,7 +22,17 @@
 }
 
 .settlements {
-  stroke: blue;
+  fill: blue;
+  stroke: none;
+  fill-opacity: 0.5;
+  fill-width: 1px;
+}
+
+.dated {
+  fill: red;
+  stroke: none;
+  fill-width:1px;
+  fill-opacity: 1;
 }
 
 </style>
@@ -39,9 +49,11 @@ var projection = d3.geo.patterson()
     .scale(153)
     .translate([width / 2, height / 2])
     .precision(.1);
+    
 
 var path = d3.geo.path()
-    .projection(projection);
+    .projection(projection)
+    .pointRadius(2);
 
 var graticule = d3.geo.graticule();
 
@@ -54,15 +66,20 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
+var map = svg.append('g');
+var undated_pts = svg.append('g');
+var dated_pts = svg.append('g');
+
+
 
 // World map!
 d3.json("world.json", function(error, world) {
-  svg.insert("path", ".graticule")
+  map.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
       .attr("d", path);
 
-  svg.insert("path", ".graticule")
+  map.insert("path", ".graticule")
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
       .attr("class", "boundary")
       .attr("d", path);
@@ -70,13 +87,24 @@ d3.json("world.json", function(error, world) {
 });
 
 //Plot points
-d3.json("a1.json", function(error, settlements) {
+d3.json("dated_world.json", function(error, settlements) {
   console.log("here")
-  svg.append("path")
-      .datum(topojson.feature(settlements, settlements.objects.america))
+  dated_pts.append("dated")
+      .datum(topojson.feature(settlements, settlements.objects.dated_settlements_geo))
+      .attr("class", "dated")
+      .attr("d", path)
+
+    });
+
+//Plot points
+d3.json("world_topo.json", function(error, settlements) {
+  console.log("undated")
+  undated_pts.append("path")
+      .datum(topojson.feature(settlements, settlements.objects.settlements_geo))
       .attr("class", "settlements")
       .attr("d", path)
-});
+    });
+
 
 
 
