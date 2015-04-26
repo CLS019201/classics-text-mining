@@ -2,3 +2,4 @@ all_infoboxes_latd.xml
 sanitize_1.xml
 *.xml
 *.json
+node_modules/*
