@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+path {
+  fill: none;
+  stroke-linejoin: round;
+}
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.land {
+  fill: #ddd;
+}
+
+.states,
+.hexagons path {
+  stroke: #fff;
+}
+
+.points {
+/*  fill: blue;
+  stroke: blue;
+  stroke-opacity: 0.5;
+  stroke-width:0.2px;
+  fill-opacity: 0.2;*/
+}
+
+</style>
+<body>
+<input type="text" id="year" size="30">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+var thresh = new Date(1900, 0, 1)
+
+
+// var width = 960,
+//     height = 500,
+var width = 960 * 1.5,
+    height = 547 * 1.5,
+    parseDate = d3.time.format("%x").parse;
+
+var color = d3.time.scale()
+    .domain([new Date(1700, 0, 1), new Date(1900, 0, 1)])
+    .range(["black", "lightblue"])
+    .interpolate(d3.interpolateLab);
+
+var hexbin = d3.hexbin()
+    .size([width, height])
+    .radius(4);
+
+var radius = d3.scale.sqrt()
+    .domain([0, 6])
+    .range([0, 4]);
+
+// var projection = d3.geo.albers()
+//     .scale(1000)
+//     .translate([width / 2, height / 2])
+//     .precision(.1);
+
+var projection = d3.geo.patterson()
+    .scale(250)
+    .translate([(width / 1.25), height / 2])
+    .precision(.1);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+$(document).ready(function(){
+            $("input").change(function(){
+                var thresh = new Date(parseInt($("input").val(),10), 0, 1);
+                console.log(thresh);
+                d3.selectAll("circle")
+                  .transition()
+                  .duration(2000)
+                  .each(function() {
+                    d3.select(this)
+                      .style("fill-opacity", function(d) {
+                        if (d3.select(this).attr("date") > thresh.toISOString()) {
+                          // console.log('poop');
+                          return 0; 
+                        } else {
+                          return 1;
+                        }
+                  })
+                  })
+                  
+
+
+            });
+        });
+
+
+queue()
+    .defer(d3.json, "json/world.json")
+    .defer(d3.tsv, "json/dated_americas.tsv")
+    .await(ready);
+
+function ready(error, world, walmarts) {
+  walmarts.forEach(function(d) {
+    var p = projection(d);
+    d[0] = p[0], d[1] = p[1];
+    d.date = parseDate(d.date);
+  });
+
+  svg.insert("path", ".graticule")
+      .datum(topojson.feature(world, world.objects.land))
+      .attr("class", "land")
+      .attr("d", path);
+
+  svg.insert("path", ".graticule")
+      .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
+      .attr("class", "boundary")
+      .attr("d", path);
+  // svg.append("path")
+  //     .datum(topojson.feature(us, us.objects.land))
+  //     .attr("class", "land")
+  //     .attr("d", path);
+
+  // svg.append("path")
+  //     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+  //     .attr("class", "states")
+  //     .attr("d", path);
+
+  // svg.append("g")
+  //     .attr("class", "hexagons")
+  //   .selectAll("path")
+  //     .data(hexbin(walmarts).sort(function(a, b) { return b.length - a.length; }))
+  //   .enter().append("path")
+  //     .attr("d", function(d) { return hexbin.hexagon(radius(4)); })
+  //     .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+  //     .style("fill", function(d) { return color(d3.median(d, function(d) { return + d.date; })); });
+  svg.append("g")
+      .attr("class", "points")
+    .selectAll("path")
+      .data(walmarts) // .filter(function(d) {return + d.date < thresh }))
+    .enter().append("circle")
+      .attr("r", 2.5)
+      .attr("date", function (d) {return d.date; })
+      // .attr("d", function(d) { return hexbin.hexagon(radius(4)); })
+      .attr("transform", function(d) { return "translate(" + d[0] + "," + d[1] + ")"; })
+      .style("fill", function(d) { return color(d.date); });
+
+
+
+}
+
+</script>

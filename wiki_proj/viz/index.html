@@ -23,37 +23,58 @@
 
 .settlements {
   fill: blue;
-  stroke: none;
-  fill-opacity: 0.5;
-  fill-width: 1px;
+  stroke: blue;
+  stroke-opacity: 0.5;
+  stroke-width:0.2px;
+  fill-opacity: 0.2;
 }
 
 .dated {
   fill: red;
-  stroke: none;
-  fill-width:1px;
-  fill-opacity: 1;
+  stroke: red;
+  stroke-opacity: 0.5;
+  stroke-width:0.2px;
+  fill-opacity: 0.2;
 }
+
+.hexagons path {
+  stroke: #fff;
+}
+
 
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
 <script>
 
 var width = 960 * 1.5,
-    height = 547 * 1.5;
+    height = 547 * 1.5,
+    parseDate = d3.time.format("%x").parse;
 
 var projection = d3.geo.patterson()
-    .scale(153)
-    .translate([width / 2, height / 2])
+    .scale(250)
+    .translate([(width / 1.25), height / 2])
     .precision(.1);
     
+var color = d3.time.scale()
+    .domain([new Date(1962, 0, 1), new Date(2006, 0, 1)])
+    .range(["black", "steelblue"])
+    .interpolate(d3.interpolateLab);
 
 var path = d3.geo.path()
     .projection(projection)
-    .pointRadius(2);
+    .pointRadius(3);
+
+var hexbin = d3.hexbin()
+    .size([width, height])
+    .radius(8);
+
+var radius = d3.scale.sqrt()
+    .domain([0, 12])
+    .range([0, 8]);
 
 var graticule = d3.geo.graticule();
 
@@ -73,7 +94,7 @@ var dated_pts = svg.append('g');
 
 
 // World map!
-d3.json("world.json", function(error, world) {
+d3.json("json/world.json", function(error, world) {
   map.insert("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
@@ -86,24 +107,42 @@ d3.json("world.json", function(error, world) {
 
 });
 
-//Plot points
-d3.json("dated_world.json", function(error, settlements) {
-  console.log("here")
-  dated_pts.append("dated")
-      .datum(topojson.feature(settlements, settlements.objects.dated_settlements_geo))
-      .attr("class", "dated")
-      .attr("d", path)
-
+d3.tsv("json/dated_americas.tsv", function(error, points) {
+  console.log('here')
+    points.forEach(function(d) {
+      var p = projection(d);
+      d[0] = p[0], d[1] = p[1];
+      d.date = parseDate(d.date);
     });
 
-//Plot points
-d3.json("world_topo.json", function(error, settlements) {
-  console.log("undated")
-  undated_pts.append("path")
-      .datum(topojson.feature(settlements, settlements.objects.settlements_geo))
-      .attr("class", "settlements")
-      .attr("d", path)
-    });
+    dated_pts.append("path")
+      .attr("class", "hexagons")
+    .selectAll("path")
+      .data(hexbin(points).sort(function(a, b) { return b.length - a.length; }))
+    .enter().append("path")
+      .attr("d", function(d) { return hexbin.hexagon(radius(d.length)); })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .style("fill", function(d) { return color(d3.median(d, function(d) { return +d.date; })); });
+})
+
+// //Plot points
+// d3.json("/json/americas_d_topo.json", function(error, settlements) {
+//   console.log("here")
+//   dated_pts.append("path")
+//       .datum(topojson.feature(settlements, settlements.objects.americas_d_geo))
+//       .attr("class", "dated")
+//       .attr("d", path)
+
+//     });
+
+// //Plot points
+// d3.json("/json/americas_u_topo.json", function(error, settlements) {
+//   console.log("undated")
+//   undated_pts.append("path")
+//       .datum(topojson.feature(settlements, settlements.objects.americas_u_geo))
+//       .attr("class", "settlements")
+//       .attr("d", path)
+//     });
 
 
 

@@ -48,7 +48,7 @@ var svg = d3.select("body").append("svg")
 var map = svg.append('g');
 var pts = svg.append('g');
 
-d3.json("usa.json", function(error, us) {
+d3.json("json/old/usa.json", function(error, us) {
   map.insert("path", ".graticule")
       .datum(topojson.feature(us, us.objects.land))
       .attr("class", "land")
@@ -66,7 +66,7 @@ d3.json("usa.json", function(error, us) {
 });
 
 //Plot points
-d3.json("america_topo.json", function(error, settlements) {
+d3.json("json/old/america_topo.json", function(error, settlements) {
   console.log("here")
   pts.append("path")
       .datum(topojson.feature(settlements, settlements.objects.america))
